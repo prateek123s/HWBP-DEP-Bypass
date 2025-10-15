@@ -8,7 +8,7 @@
 A proof-of-concept implementation demonstrating how to execute code from non-executable memory on Windows x64 systems by combining hardware breakpoints, vectored exception handling (VEH), and instruction emulation—bypassing DEP/NX protection without modifying memory permissions.
 
 > **📖 Complete Technical Write-Up**: For a comprehensive deep-dive into this technique with detailed explanations, debugging walkthrough with screenshots, and security analysis, read the full blog post:  
-> **[Executing Code from Non-Executable Memory: A Hardware Breakpoint Approach](https://yourblog.com/hwbp-dep-bypass)**
+> **[The Emulator's Gambit: Executing Code from Non-Executable Memory](https://redops.at/en/blog/the-emulators-gambit-executing-code-from-non-executable-memory)**
 
 ## ⚠️ Disclaimer
 
