@@ -41,3 +41,6 @@ This technique bypasses DEP/NX by exploiting the timing of CPU hardware breakpoi
 - Set next hardware breakpoint at new RIP
 
 **The Result**: Each instruction triggers this cycle. Code executes from `.data` section (PAGE_READWRITE) without ever changing memory protection. DEP/NX remains active but is bypassed through software emulation.
+
+<img width="1338" height="1275" alt="image" src="https://github.com/user-attachments/assets/e5b7feb9-0a33-48bb-8a63-190869d2651f" />
+
