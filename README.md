@@ -16,7 +16,7 @@ A proof-of-concept implementation demonstrating how to execute code from non-exe
 
 This code demonstrates security concepts and should only be used in controlled environments for learning, testing, or legitimate security research. The author does not condone malicious use and accepts no responsibility for misuse of this code. Use at your own risk and only on systems you own or have explicit permission to test. Just to be clear, **I’m not claiming this as a DEP/NX bypass**. It’s simply a fun research and learning project that I documented for myself and shared on my homepage — nothing more and nothing less.
 
-**Also, to be clear, I’m not claiming to be a programmer or reverse engineer. Most of the code was written or generated with Claude AI** — I don’t have the skills to create it entirely from scratch. I’m just learning in small, gradual steps and focusing on understanding what the code is doing.
+**Also, to be clear, I’m not claiming to be a programmer or reverse engineer. Most of the code was written or generated with Claude AI** — I don’t have the skills to create it entirely from scratch. I’m just learning in small, gradual steps and focusing on understanding what the code is doing, how internals are working, how to debug, etc.
 
 ## 📖 Overview
 
